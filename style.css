@@ -1,7 +1,8 @@
 :root{
     --background-main: #202124;
     --background-footer: #212327;
-    --txt-footer: #bdc1c6;
+    --txt-footer-2: #bdc1c6;
+    --txt-footer: #5f6368;
     --txt-main: white;
     --btn-color: #303134;
 
@@ -26,6 +27,11 @@ ul > li {
     padding: 0px .5em;
 }
 
+.txt-nav:hover{
+    text-decoration: underline;
+}
+
+
 header{
     width: 100%;
     height: auto;
@@ -39,11 +45,17 @@ header{
 }
 .icon{
     position: relative;
-    top: 5px;
-    margin: .2em .4em;}
+    top: 6px;
+    margin: .2em .4em;
+border-radius: 50%;}
+
+.icon:hover{
+    box-shadow: 0px 0px 1px 5px #5f636883;
+    background-color: #5f636883;
+}
 
 .material-icons{
-    color: var(--txt-footer);
+    color: var(--txt-footer-2);
 
 }
 
@@ -73,31 +85,40 @@ main {
 
 
 .search-content{
-    position: absolute;
-    display: inline-block;
-    width: 75vw;
-    height: 6vh;
-    max-width: 800px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    
-}
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: row;
 
-.search-bar{
     background-color: var(--background-main);
     border: 1px solid var(--txt-footer);
     border-radius: 24px;
     width: 75vw;
-    height: 6vh; 
-    
+    height: 5.5vh;
     max-width: 800px;
-    z-index: -1;
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-.mic{
-    position: relative;
-    top: 0;
-    display: inline-block;
-    z-index: 1;
+
+.search-bar{
+    background-color: var(--background-main); 
+    border: none ;
+    outline: none;
+    width: 80%;
+    height: 5.2vh; 
+    caret-color: white;
+    color:white;
+    font-size: 1rem;
+}
+
+.search-content:hover> .search-bar, .search-content:hover{
+    background-color: var(--btn-color);
+}
+
+.search-content:hover{
+    box-shadow: 0 1px 6px 0 #171717;
+    border: none;
 }
 
 
@@ -116,15 +137,19 @@ main {
     font-size: .9rem;
     background-color: var(--btn-color);
     color: var(--txt-main);
-    padding: .6em 1.1em;
+    padding: .7em 1.2em;
     border: none;
-    border-radius: 8px;
-    margin: .5em;
+    border-radius: 5px;
+    margin: .4em;
 
+}
+
+.btn:hover{
+    border: 1px solid var(--txt-footer); 
 }
 .extra-txt{
     font-size: .8rem;
-    margin-top: 1.8em;
+    margin-top: 1.3em;
     color:var(--txt-footer)
 }
 
