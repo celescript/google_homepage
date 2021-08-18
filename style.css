@@ -1,7 +1,7 @@
 :root{
     --background-main: #202124;
-    --background-footer: #212327;
-    --txt-footer-2: #bdc1c6;
+    --background-footer: #171717;
+    --txt-footer-2: #999da2;
     --txt-footer: #5f6368;
     --txt-main: white;
     --btn-color: #303134;
@@ -77,7 +77,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 87vh;
     width: 100vw;
     line-height: 2em;
 }
@@ -95,7 +95,7 @@ main {
     border-radius: 24px;
     width: 75vw;
     height: 5.5vh;
-    max-width: 800px;
+    max-width: 600px;
     
     margin-top: 1em;
     margin-bottom: 1em;
@@ -106,7 +106,7 @@ main {
     border: none ;
     outline: none;
     width: 80%;
-    height: 5.2vh; 
+    height: 5.3vh; 
     caret-color: white;
     color:white;
     font-size: 1rem;
@@ -150,6 +150,51 @@ main {
 .extra-txt{
     font-size: .8rem;
     margin-top: 1.3em;
-    color:var(--txt-footer)
+    color:var(--txt-footer-2)
 }
+
+.footer{
+    background-color: var(--background-footer);
+    color: var(--txt-footer-2);
+    padding: 1rem;
+    border: .5px solid var(--background-main);
+    font-size: 0.9rem;
+    position: fixed;
+     bottom: 0;
+     width: 100%;
+}
+.text-one{
+    margin-left: 1.5em;
+}
+
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: .2rem;
+}
+
+.footer-two ul li:hover{
+    text-decoration: underline;
+}
+.bar-right{
+    float: right;
+    margin-right: 4rem;
+}
+.bar-left{
+    float: left;
+    margin-left: 4rem;
+    
+}
+
+@media(min-width: 720px){
+    .bar-right, .bar-right{ 
+        float: center;
+        line-height: 1.5em;
+    }
+}
+
+
+
+
 
