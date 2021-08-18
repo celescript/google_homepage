@@ -141,6 +141,7 @@ main {
     border: none;
     border-radius: 5px;
     margin: .4em;
+    -webkit-appearance: none;
 
 }
 
