@@ -188,9 +188,11 @@ main {
 }
 
 @media(min-width: 720px){
-    .bar-right, .bar-right{ 
-        float: center;
-        line-height: 1.5em;
+    .footer-two{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
